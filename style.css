@@ -1,0 +1,96 @@
+/* General styles */
+body {
+  background: #000000;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+}
+
+/* Matrix canvas background */
+#matrix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #000;
+}
+
+/* Centered container (static size) */
+.container {
+  text-align: center;
+  width: 1100px;   /* Fixed width */
+  height: 500px;  /* Fixed height */
+  padding: 30px;
+  border: 2px solid #ffffff; /* Neon white */
+  border-radius: 15px;
+  box-shadow: 0 0 30px #ffffff, 0 0 30px #ffffff inset;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title */
+.title {
+  font-size: 2.5em;
+  color: #1100ff; /* Neon blue */
+  text-shadow: 0 0 20px #10a7ff, 0 0 20px #0077ff;
+  margin: 0;
+}
+
+/* Info section */
+.info {
+  font-size: 1.2em;
+}
+
+#datetime {
+  color: #ca0028; /* Neon red */
+  text-shadow: 0 0 20px #ca0028;
+}
+
+#guid {
+  color: #f7ff00; /* Neon yellow */
+  text-shadow: 0 0 20px #f7ff00;
+}
+
+#appversion {
+  color: #04db00; /* Neon green */
+  text-shadow: 0 0 20px #ffffff;
+}
+
+/* Facts section */
+.facts {
+  font-size: 1.5em;
+  height: 100px; /* Fixed fact box */
+  color: #39ff14; /* Neon green */
+  text-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  margin-top: 20px;
+}
+
+/* Typewriter effect */
+.typewriter {
+  border-right: 2px solid #39ff14;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+  0%, 50% { border-color: #39ff14; }
+  51%, 100% { border-color: transparent; }
+}
